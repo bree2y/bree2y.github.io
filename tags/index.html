@@ -14,17 +14,15 @@
 <meta name="author" content="Bree2y">
 
 
-    
-    
-
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Bree2y">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="Bree2y">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-23T04:34:33.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bree2y">
+<meta name="twitter:title" content="tags">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -52,13 +50,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Bree2y</title>
+<title>tags | Bree2y</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +63,7 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
+        isHome: false,
         isPost: false,
         isArchive: false,
         isTag: false,
@@ -249,13 +245,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-个人博客的搭建" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/02/23/个人博客的搭建/" class="article-date">
-      <time datetime="2019-02-23T13:21:12.000Z" itemprop="datePublished">2019-02-23</time>
+      <a href="/tags/index.html" class="article-date">
+      <time datetime="2019-02-23T04:31:05.000Z" itemprop="datePublished">2019-02-23</time>
 </a>
 
 
@@ -269,107 +263,153 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/23/个人博客的搭建/">个人博客的搭建</a>
+    <h1 class="article-title" itemprop="name">
+      tags
     </h1>
   
 
       </header>
       
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="个人博客搭建过程（github-hexo）"><a href="#个人博客搭建过程（github-hexo）" class="headerlink" title="个人博客搭建过程（github hexo）"></a>个人博客搭建过程（github hexo）</h1><p>Hexo(中文官方网站)是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统.</p>
-<hr>
-<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>git下载（官网）</p>
-<h5 id><a href="#" class="headerlink" title></a><img src="https://s2.ax1x.com/2019/02/24/k4Q7ff.png" alt></h5><h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><h3 id="下载并安装（建议旧版）"><a href="#下载并安装（建议旧版）" class="headerlink" title="下载并安装（建议旧版）"></a>下载并安装（建议旧版）<img src="https://s2.ax1x.com/2019/02/24/k4l9hV.png" alt></h3><p>Tip：Custom Setup这一步，点一下Add to Path新建文件夹blog，右击git bash再点next</p>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>新建文件夹blog，右击git bash，输入以下</p>
-<blockquote>
-<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
-</blockquote>
-<p>完成后输入</p>
-<blockquote>
-<p>cnpm i -g hexo-cli</p>
-</blockquote>
-<p>  检查hexo版本</p>
-<blockquote>
-<p>hexo  -v</p>
-</blockquote>
-<p><img src="https://s2.ax1x.com/2019/02/24/k4lFcF.png" alt></p>
-<hr>
-<h2 id="本地搭建博客"><a href="#本地搭建博客" class="headerlink" title="本地搭建博客"></a>本地搭建博客</h2><h3 id="依次输入一下命令"><a href="#依次输入一下命令" class="headerlink" title="依次输入一下命令"></a>依次输入一下命令</h3><blockquote>
-<p>hexo init</p>
-<p>cnpm install</p>
-<p>hexo s <!--生成本地服务--></p>
-</blockquote>
-<h3 id="访问本地博客"><a href="#访问本地博客" class="headerlink" title="访问本地博客"></a>访问本地博客</h3><p>完成以上命令后，访问本地博客<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<p>如果以上步骤均无误，默认博客为以下页面，那么本地博客搭建完毕</p>
-<p><img src="https://s2.ax1x.com/2019/02/24/k4lSkq.png" alt></p>
-<hr>
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="实现git本地管理GitHub"><a href="#实现git本地管理GitHub" class="headerlink" title="实现git本地管理GitHub"></a>实现git本地管理GitHub</h3><p>blog，右击git bash，进入输入如下地址</p>
-<blockquote>
-<p>git config –global user.name “你的github用户名”</p>
-<p>git config –global user.email “你的邮箱”</p>
-</blockquote>
-<p><strong>tip  </strong> 注意空格！！！</p>
-<h3 id="创建ssh"><a href="#创建ssh" class="headerlink" title="创建ssh"></a>创建ssh</h3><p> 打开git bash，依次输入</p>
-<blockquote>
-<p>ssh-keygen -t rsa -C your email</p>
-<p>clip &lt; ~/.ssh/id_rsa.pub</p>
-</blockquote>
-<p>添加ssh key</p>
-<p><img src="https://s2.ax1x.com/2019/02/24/k4lkX4.png" alt></p>
-<p>粘贴密钥至key处（先得注册GitHub账号，需要翻墙注册）点击add ssh key</p>
-<p>回到Gitbash 输入</p>
-<blockquote>
-<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
-</blockquote>
-<h3 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h3><p>创建新的储存库</p>
-<p>进入blog文件夹，用编辑器打开，将最后的改成图中的样子（注意：冒号后有空格）</p>
-<p><img src="https://s2.ax1x.com/2019/02/24/k4lPpT.png" alt></p>
-<p>（其中为github的用户名）</p>
-<h3 id="上传blog到GitHub"><a href="#上传blog到GitHub" class="headerlink" title="上传blog到GitHub"></a>上传blog到GitHub</h3><p>依次输入以下命令</p>
-<blockquote>
-<p>cnpm install hexo-deployer-git –save</p>
-<p>hexo d</p>
-</blockquote>
-<p>现在可以通过   用户名.github.io   进入博客</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/hexo/">hexo</a>
-    </div>
+              <style>
+    .article-meta { display: none; }
+    #container .article .article-title { padding-right: 0; }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover { border-left: none; }
+    .article-title { font-size: 1.6em }
+    .article-entry hr { margin: 0;}
+    .article-meta,
+    #container .article-info-post.article-info { display: none;}
+    #container .article .article-title { padding: 0; }
+</style>
 
 
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-    </div>
+    <!-- Tag Cloud Page -->
+    <hr>
+<br>
+<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li></ul>
 
+<p class="count"></p>
+
+<div class="tags">
+    <a href="/tags/github/" style="font-size: 16px; color: #808080">github</a> <a href="/tags/hexo/" style="font-size: 16px; color: #808080">hexo</a>
+</div>
+<style>
+    .category-list li{
+        display: inline-block;
+        margin: 0 1em .5em 0;
+        padding: 4px;
+        border: 1px solid lightgray;
+        font-size: 1.2rem;
+    }
+    .category-list a { color: gray; }
+    .category-list-item:hover a {
+        color: gray;
+        text-decoration: none;
+    }
+    .category-list-count {
+        margin-left: 2px;
+        font-size: .9rem;
+    }
+    .article-entry ul li:before{ display: none; }
+    .article-inner { text-align: center; }
+    .tags {
+        max-width: 42em;
+        margin: 2em auto;
+        margin-top: 0em;
+    }
+    .tags a {
+        margin-right: 1em;
+        line-height: 65px;
+        border-bottom: 1px solid gray;
+        white-space: nowrap;
+        transition: border-bottom .5s;
+    }
+    .tags a:hover {
+        border-bottom: 3px dotted gray;
+        text-decoration: none;
+    }
+    #count > span {
+        margin: auto .2em;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Count tags and categories -->
+<p id="count">
+        已有<span><script>document.write($(".category-list-item").length)</script></span>个分类，
+        共计<span><script>document.write($(".tags > a").length)</script></span>个标签
+</p>
+<script>
+    $('#count').appendTo('.count');
+</script>
+
+          
+        
       
-      <div class="clearfix"></div>
     </div>
     
   </div>
+  
+    
+
+
   
 </article>
 
 
 
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"tags　| Bree2y　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
 
 
 
-  
-  
+
+    
+
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
