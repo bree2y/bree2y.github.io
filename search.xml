@@ -2,33 +2,6 @@
 <search> 
   
   
-    
-    <entry>
-      <title>个人博客的搭建</title>
-      <link href="/2019/02/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
-      <url>/2019/02/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
-      
-        <content type="html"><![CDATA[<h1 id="个人博客搭建过程（github-hexo）"><a href="#个人博客搭建过程（github-hexo）" class="headerlink" title="个人博客搭建过程（github hexo）"></a>个人博客搭建过程（github hexo）</h1><p>Hexo(中文官方网站)是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统.</p><hr><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>git下载（官网）</p><h5 id><a href="#" class="headerlink" title></a><img src="https://s2.ax1x.com/2019/02/24/k4Q7ff.png" alt></h5><h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><h3 id="下载并安装（建议旧版）"><a href="#下载并安装（建议旧版）" class="headerlink" title="下载并安装（建议旧版）"></a>下载并安装（建议旧版）<img src="https://s2.ax1x.com/2019/02/24/k4l9hV.png" alt></h3><p>Tip：Custom Setup这一步，点一下Add to Path新建文件夹blog，右击git bash再点next</p><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>新建文件夹blog，右击git bash，输入以下</p><blockquote><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p></blockquote><p>完成后输入</p><blockquote><p>cnpm i -g hexo-cli</p></blockquote><p>  检查hexo版本</p><blockquote><p>hexo  -v</p></blockquote><p><img src="https://s2.ax1x.com/2019/02/24/k4lFcF.png" alt></p><hr><h2 id="本地搭建博客"><a href="#本地搭建博客" class="headerlink" title="本地搭建博客"></a>本地搭建博客</h2><h3 id="依次输入一下命令"><a href="#依次输入一下命令" class="headerlink" title="依次输入一下命令"></a>依次输入一下命令</h3><blockquote><p>hexo init</p><p>cnpm install</p><p>hexo s <!--生成本地服务--></p></blockquote><h3 id="访问本地博客"><a href="#访问本地博客" class="headerlink" title="访问本地博客"></a>访问本地博客</h3><p>完成以上命令后，访问本地博客<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><p>如果以上步骤均无误，默认博客为以下页面，那么本地博客搭建完毕</p><p><img src="https://s2.ax1x.com/2019/02/24/k4lSkq.png" alt></p><hr><h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="实现git本地管理GitHub"><a href="#实现git本地管理GitHub" class="headerlink" title="实现git本地管理GitHub"></a>实现git本地管理GitHub</h3><p>blog，右击git bash，进入输入如下地址</p><blockquote><p>git config –global user.name “你的github用户名”</p><p>git config –global user.email “你的邮箱”</p></blockquote><p><strong>tip  </strong> 注意空格！！！</p><h3 id="创建ssh"><a href="#创建ssh" class="headerlink" title="创建ssh"></a>创建ssh</h3><p> 打开git bash，依次输入</p><blockquote><p>ssh-keygen -t rsa -C your email</p><p>clip &lt; ~/.ssh/id_rsa.pub</p></blockquote><p>添加ssh key</p><p><img src="https://s2.ax1x.com/2019/02/24/k4lkX4.png" alt></p><p>粘贴密钥至key处（先得注册GitHub账号，需要翻墙注册）点击add ssh key</p><p>回到Gitbash 输入</p><blockquote><p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p></blockquote><h3 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h3><p>创建新的储存库</p><p>进入blog文件夹，用编辑器打开，将最后的改成图中的样子（注意：冒号后有空格）</p><p><img src="https://s2.ax1x.com/2019/02/24/k4lPpT.png" alt></p><p>（其中为github的用户名）</p><h3 id="上传blog到GitHub"><a href="#上传blog到GitHub" class="headerlink" title="上传blog到GitHub"></a>上传blog到GitHub</h3><p>依次输入以下命令</p><blockquote><p>cnpm install hexo-deployer-git –save</p><p>hexo d</p></blockquote><p>现在可以通过   用户名.github.io   进入博客</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
 </search>
